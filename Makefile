@@ -2,7 +2,7 @@ FILES=report.pdf
 
 all: report.pdf
 
-watch:z
+watch:
 	wr --exec "make" report.md citations.bib templates/template.latex
 
 %.tex: %.md citations.bib templates/template.latex
