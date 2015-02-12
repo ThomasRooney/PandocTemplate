@@ -3,4 +3,5 @@
 *.out
 *.tex
 *.pdf
+*.tar.gz
 *.bibtex

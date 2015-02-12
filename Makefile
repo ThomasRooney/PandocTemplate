@@ -14,6 +14,9 @@ watch:
 	@xelatex $*.tex -o $*.pdf 2>&1 > /dev/null
 
 clean:
-	rm -f report.pdf report.log report.out report.aux references.bibtex texput.log
+	rm -f report.pdf report.log report.out report.aux references.bibtex texput.log pandoc_template.tar.gz
 
+archive: pandoc_template.tar.gz
 
+pandoc_template.tar.gz:
+	git archive --format tar.gz HEAD > pandoc_template.tar.gz
